@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Site officiel du Cinéma Megarama Bordeaux: retrouvez la magie du cinéma, les films à l'affiche, événements et films à venir."
+    />
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>André Despouys</title>
+    <link rel="stylesheet" href="{{ "/assets/font-awesome/css/font-awesome.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    {% include header.html %}
+    <section class="body-section">
+      {{ content }}
+    </section>
+
+    <script src="{{ base.url | prepend: site.url }}/assets/js/script.js"></script>
+  </body>
+</html>

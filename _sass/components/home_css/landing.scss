@@ -1,0 +1,96 @@
+/* LANDING */
+#landing {
+  height: 50vh;
+  margin: 5% auto ;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.box-landing {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  color: #f6f7eb;
+}
+.A {
+  width: 60px;
+}
+.subtitle-landing {
+  margin:10% 0;
+}
+.landing-guy-mobile{
+  display: none;
+}
+.landing-guy-desktop {
+  position: relative;
+  width: 60%;
+
+}
+.little-guy {
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -50%;
+  left: 45%;
+  width: 40px;
+}
+.tag-landing {
+  position: absolute;
+  bottom: -50%;
+  right:12%;
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  /* LANDING NAV */
+  #landing {
+    height: 80vh;
+    width: 100%;
+    display: block;
+    margin-bottom: 10%;
+  }
+  .box-landing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    color: #f6f7eb;
+    position: relative;
+  }
+  .landing-guy-mobile{
+    display: block;
+    margin-bottom: 10%;
+  }
+  .landing-guy-desktop {
+    display: none;
+  }
+  .title-landing {
+    text-align: center;
+    line-height: 1.5;
+
+  }
+  .A{
+    width: 40px;
+    margin-top: 20px;
+  }
+  .subtitle-landing {
+
+    text-align: center;
+
+  }
+  .arrow {
+    position: absolute;
+    bottom: -15%;
+    left: 44%;
+    width: 40px;
+  }
+  .tag-landing {
+    position: absolute;
+    bottom: -50%;
+    right:12%;
+    width: 20%;
+  }
+}

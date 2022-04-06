@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after { content: ""; content: none; }
+
+q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+* { box-sizing: border-box; }
+
+body { background-color: #232323; font-family: "Roboto", Montserrat, serif; background-image: url("../../assets/img/M_BG.png"); background-repeat: no-repeat; background-position: right; background-position-y: top; background-attachment: fixed; }
+
+.grid { padding: 0 8vw; }
+
+a { color: #f6f7eb; text-decoration: none; }
+
+a:hover { color: inherit; }
+
+/* ----------------------------BOUTONS_DESK----------------------------------------------------------- */
+.button { /* bouton de base ROSE */ display: table; max-width: 100%; text-align: center; background-color: #ff5476; padding: 12px 29px; border-radius: 30px; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); color: #f6f7eb; font-family: "Montserrat", sans-serif; cursor: pointer; background: linear-gradient(to left, #ff5476 50%, #c73c58 50%) right; background-size: 200%; transition: 0.2s ease-out; }
+
+.button:hover { background-color: #dd4865; color: #f6f7eb; background-position: left; }
+
+.button-blue { /* bouton BLEU */ display: table; max-width: 100%; text-align: center; padding: 12px 29px; border-radius: 30px; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); transition: 0.2s; font-family: "Montserrat", sans-serif; cursor: pointer; background-color: #77eecc; color: #393e41; background: linear-gradient(to left, #77eecc 50%, #4ca88e 50%) right; background-size: 200%; transition: 0.2s ease-out; }
+
+.button-blue:hover { background-color: #6ad1b4; background-position: left; color: #393e41; }
+
+/* ----------------------------GENERAL----------------------------------------------------------- */
+h1 { font-size: 5rem; text-align: left; font-weight: bold; }
+
+h2 { color: #f6f7eb; font-size: 4vw; font-weight: bold; }
+
+h3 { color: #f6f7eb; font-size: 2rem; }
+
+h3 { font-family: roboto, arial, helvetica, sans-serif; }
+
+p { color: #f6f7eb; }
+
+.texte_roboto { font-family: roboto, arial, helvetica, sans-serif; }
+
+.section_title { /*classe à ajouter pour tous les titres des sections*/ display: flex; font-family: roboto, arial, helvetica, sans-serif; flex-direction: row; align-items: center; margin: 5% 0; }
+
+.section_title i { display: inline-block; background-color: #f6f7eb; height: 3px; flex-grow: 1; margin-left: 50px; border-radius: 3px; }
+
+/* NAV DESKTOP */
+.logo { cursor: pointer; }
+
+.nav-mobile { display: none; }
+
+nav { z-index: 10; top: 0; left: 0; position: fixed; width: 100%; padding: 1% 5%; justify-content: space-between; display: flex; font-family: "Montserrat", sans-serif; background-color: #1c1c1c; }
+
+.logo-nav { width: 20%; }
+
+.logo { width: 100%; }
+
+.navbox-list { width: 60%; }
+
+.nav-list { display: flex; justify-content: center; align-items: center; list-style-type: none; padding: 1% 0 0 0; height: 70%; margin: 0; color: #f6f7eb; }
+
+.item-nav { padding: 1% 6%; border: 0.5px white; border-left-style: solid; text-align: center; vertical-align: middle; font-size: 90%; cursor: pointer; transition: 1s ease; }
+
+.nav-a { color: #f6f7eb; vertical-align: sub; font-weight: bold; }
+
+.right { border-right: 0.5px white; border-right-style: solid; }
+
+.icon-box { width: 20%; display: flex; align-items: center; justify-content: space-between; }
+
+.search-box { margin-top: -5%; }
+
+.search { border-radius: 50px; padding: 5%; background: url(../../assets/img/search.png) no-repeat scroll 6px 6px white; padding-left: 50px; padding-top: 4%; border: none; border-color: white; }
+
+.search:focus-visible { color: black; outline-color: #ff5b7b; }
+
+.nav-a:hover { color: #ff5b7b; }
+
+@media screen and (max-width: 768px) { .nav-bar { display: none; } .nav-mobile { display: flex; justify-content: space-around; padding: 5% 0; margin: 0 0 10% 0; z-index: 10; } .search-mobile-img { width: 30px; height: 30px; margin: 10% 0 0 0; } .logo-mobile-box { width: 40%; } .img-logo-mobile { width: 100%; } .menu-btn { margin-top: 1%; position: relative; display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; transition: all 0.5s ease-in-out; } .menu-btn_burger { width: 30px; height: 5px; background: white; border-radius: 5px; transition: all 0.5s ease-in-out; } .menu-btn_burger::before, .menu-btn_burger::after { content: ""; position: absolute; width: 30px; height: 5px; background: white; border-radius: 5px; transition: all 0.5s ease-in-out; } .menu-btn_burger::before { transform: translateY(-10px); } .menu-btn_burger::after { transform: translateY(10px); } .menu-btn.open .menu-btn_burger { transform: translateX(-50px); background: transparent; box-shadow: none; } .menu-btn.open .menu-btn_burger::before { transform: rotate(45deg) translate(35px, -35px); } .menu-btn.open .menu-btn_burger::after { transform: rotate(-45deg) translate(35px, 35px); } .navbar-nav-top { height: 100%; background-color: #1c1c1c; margin: 0 auto; display: block; position: fixed; align-items: center; width: 100%; text-align: center; top: 19vw; left: -150%; transition: all 0.5s ease-in-out; z-index: 10; padding: 10% 0; } .showMenu { left: 0; } .navbox-list-mobile { display: block; height: 90%; padding: 5%; color: #f6f7eb; } .item-nav-mobile { width: 100%; margin: 10% 0; align-items: left; } .nav-a-mobile { text-align: left; font-size: 3rem; } }
+
+.list-footer-g { padding: 0; display: flex; flex-direction: row; font-size: 18px; justify-content: space-between; align-items: center; line-height: 30px; margin: 0; margin-right: 150px; }
+
+.list-footer-g a:hover { color: #ff5476; }
+
+.list-footer1 { border-right: 2px solid white; padding-right: 50px; }
+
+.list-footer2 { border-right: 2px solid white; padding-left: 50px; padding-right: 50px; }
+
+.list-footer3 { padding-left: 50px; }
+
+/* Mettre la barre sur le coté mais ne fonctionne pas avec le nom de class ?  ul{ border-left: 1px solid blue; padding: 20px; } */
+/*-------------------BOUTONS-REASEAUX-SOCIAUX----------------*/
+.list_social_media_btn { display: flex; flex-direction: column; justify-content: space-around; }
+
+.social_media_btn_twitter { display: block; margin-bottom: 5px; }
+
+.social_media_btn_facebook { display: block; margin-bottom: 5px; }
+
+.social_media_btn_instagram { display: block; margin-bottom: 5px; }
+
+.social_media_btn_youtube { display: block; margin-bottom: 0; }
+
+.list-logo { display: flex; flex-direction: column; }
+
+.list-logo1 { align-self: center; }
+
+.list-logo2 { height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+
+.list-logo2 img { border-radius: 50px; }
+
+.top { display: flex; justify-content: space-between; padding: 50px 0px; margin: 50px 0; /* align-items: center;                             */ }
+
+@media screen and (max-width: 1135px) { .top { display: block; } .top .list_social_media_btn { flex-direction: row; margin-bottom: 20px; } .top .list-logo2 { margin: auto; padding-top: 20px; } .top .list-footer-g { margin: auto; padding-bottom: 20px; } }
+
+@media screen and (max-width: 600px) { .top { margin: 20px; flex-direction: column; align-items: center; } .top .list-footer-g { display: flex; padding: 0; margin: 0; flex-direction: column; align-items: center; text-align: center; } .top ul { padding: 0 0; border-right: none; } .top .list-footer1 { margin: 0; border-bottom: 2px white solid; padding-bottom: 20px; } .top .list-footer2 { margin: 0; border-bottom: 2px white solid; padding-bottom: 20px; padding-top: 20px; } .top .list-footer3 { margin: 0; padding-bottom: 20px; padding-top: 20px; } .top .list_social_media_btn { flex-direction: row; padding-bottom: 20px; } .top .list-logo2 { align-self: center; } }
+
+.link_mobile_app_aple { display: block; margin: 20px 20px; }
+
+.link_mobile_app_android { display: block; margin: 0 20px 0 20px; }
+
+.arrierebouton { background-color: #ff5476; display: flex; width: 50px; height: 50px; justify-content: center; align-items: center; border-radius: 50%; transition: 0.2s; }
+
+.arrierebouton:hover { background-color: #77eecc; transform: rotate(10deg); }
+
+.arrierebouton2:hover { border: 1px solid #ff5476; transition: 0.2s; }
+
+.arrierebouton2 { border: 1px solid #232323; }
+
+.arrierebouton3 { border: 1px solid #232323; }
+
+.arrierebouton3:hover { border: 1px solid #77eecc; transition: 0.2s; }
+
+/*@media screen and (max-width: 1100px) { .top {  display: block } } */
+/*768 / 375*/
+.logo { transition: 0.2s; }
+
+.logo:hover { transform: scale(1.1); transform: rotate(1deg); }
+
+.logo:hover { transform: scale(1.1); transform: rotate(1deg); }
+
+.bottom { display: flex; justify-content: center; margin: auto; padding-top: 10px; padding-bottom: 10px; }
+
+/* LANDING */
+#landing { height: 50vh; margin: 15% 5% 5% 0; position: relative; width: 100%; }
+
+.box-landing { width: 80%; display: block; margin: 5% 0; color: #f6f7eb; }
+
+.subtitle-landing { margin: 5% 0; }
+
+@media screen and (max-width: 768px) { /* LANDING NAV */ #landing { padding-top: 20vw; height: 80vh; margin: 10% 0; width: 100%; } .box-landing { width: 100%; display: flex; flex-direction: column; padding: 10% 0; color: #f6f7eb; } .title-landing { text-align: center; font-size: 3.5rem; } .subtitle-landing { margin: 10% 0; text-align: center; font-size: 1rem; } }
+
+.top5 { /* EFFET HOVER TOP 5 */ }
+
+.top5 .pink_bouton { display: table; max-width: 100%; text-align: center; background-color: #ff5476; padding: 12px 29px; border-radius: 30px; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); transition: 0.2s; color: #f6f7eb; font-family: "Montserrat", sans-serif; cursor: pointer; opacity: 0%; position: absolute; bottom: 35%; left: 27%; z-index: 2; }
+
+.top5 .film { display: block; position: relative; transition: all 0.5s ease-in-out; }
+
+.top5 .film span { font-size: 250px; color: #ff5b7b; font-weight: bold; position: absolute; top: -30%; left: -30%; z-index: 3; }
+
+.top5 .film img { max-width: 100%; border-radius: 20px; transition: 1s; }
+
+.top5 .film:hover { transform: translateY(-20px); }
+
+.top5 .film:hover .pink_bouton { opacity: 100%; transition: 1s; transform: translateX(-8%); }
+
+.top5 .film:hover img { opacity: 50%; }
+
+.top5 .block-film:nth-child(1) { z-index: 7; }
+
+.top5 .block-film:nth-child(2) { z-index: 6; }
+
+.top5 .block-film:nth-child(3) { z-index: 5; }
+
+.top5 .block-film:nth-child(4) { z-index: 4; }
+
+.top5 .block-film:nth-child(5) { z-index: 3; }
+
+.top5 .box-film { position: relative; }
+
+.top5 .film { margin: 0% 10px; padding-left: 10px; border-radius: 20px; }
+
+.top5 .container-fluid { margin: 10% 0%; }
+
+.block-film { position: relative; }
+
+@media screen and (max-width: 768px) { .row { flex-direction: column; justify-content: space-between; align-content: center; margin-top: 30vw; } .film { width: 100%; margin: 0; } .number { font-size: 50%; top: 50%; width: 10%; } .w-100 { width: 100%; margin: 20vw 0; } }
+
+.container_en_ce_moment h3 { margin-top: 3px; font-size: 1.2vw; padding-bottom: 5vh; }
+
+.container_en_ce_moment { background-color: #393939; border-radius: 20px; padding: 0 12vh; margin-bottom: 30vh; }
+
+.button_center_absolute { transform: translateY(50%); margin: 20px auto 0 auto; }
+
+.film { display: flex; padding: 0; flex-direction: column; align-items: center; border-radius: 20px; }
+
+.container_en_ce_moment h3 { color: #f6f7eb; padding-top: 10px; }
+
+.film-row { padding-top: 8vh; }
+
+.film img:hover { border: 1px solid #77EECC; border-radius: 10px; }
+
+@media screen and (max-width: 480px) { .en_ce_moment { display: flex; flex-direction: column; } .en_ce_moment h2 { display: flex; flex-direction: column; font-size: 2rem; } .en_ce_moment h3 { font-size: 1.4rem; } .container_en_ce_moment { padding: 0 3vh; } .film-row { padding: 0; } .film-row-top { padding-top: 5vh; } }
+
+.evenements { display: block; margin-bottom: 30vh; }
+
+.img-evenement { transition: all 0.5s ease-in-out; cursor: pointer; }
+
+.img-evenement:hover { transform: translateY(-20px); }
+
+.evenement1 h3 { color: #f6f7eb; font-size: 65px; }
+
+.evenement2 h3 { color: #f6f7eb; font-size: 65px; }
+
+.evenement1 { display: flex; justify-content: space-evenly; }
+
+@media screen and (max-width: 480px) { .evenement1 { display: flex; flex-direction: column; justify-content: center; } }
+
+.evenement2 { display: flex; justify-content: space-evenly; margin-top: 150px; }
+
+@media screen and (max-width: 480px) { .evenement2 { flex-direction: column-reverse; justify-content: center; } }
+
+.texteevenement1 { width: 40%; text-align: left; margin: 0; padding: 0; }
+
+@media screen and (max-width: 480px) { .texteevenement1 { width: 100%; text-align: center; } }
+
+.text-evenement { line-height: 35px; margin: 10% 0; }
+
+.texteevenement2 { width: 40%; text-align: left; margin-top: 30px; }
+
+@media screen and (max-width: 480px) { .texteevenement2 { width: 100%; text-align: center; } }
+
+.texteevenement2 p { line-height: 35px; }
+
+@media screen and (max-width: 480px) { .button-blue { margin-left: auto; margin-right: auto; } }
+
+@media screen and (max-width: 480px) { .evenemet h2 { display: flex; flex-direction: column; font-size: 2rem; align-items: center; padding: 7vw 0; } }
+
+/* HORAIRES SECTION */
+.button-info2 { display: none; }
+
+#horaires { background-image: url("../../../assets/img/cinema-horaires.png"); background-size: 100%; background-repeat: no-repeat; background-position: bottom; background-attachment: fixed; margin: 20% auto; height: 100vh; position: relative; }
+
+.black { position: absolute; top: 0; left: 0; margin: 0; width: 100%; height: 100%; opacity: 30%; }
+
+.box-horaires { height: 100%; position: relative; display: flex; justify-content: space-around; align-items: center; z-index: 1; margin: 0 auto; }
+
+.box-title-horaires { position: relative; margin: 15% 0; }
+
+.title2 { padding: 0 10% 10% 0; text-align: left; font-weight: bolder; font-size: 5rem; }
+
+.box-info-horaires { margin: 0; }
+
+.gray-box { position: relative; background-color: #1c1c1c; border-radius: 10px; color: #f6f7eb; padding: 4% 5%; margin: 5% auto; font-size: 24px; display: block; width: 100%; }
+
+.icon-horaires { position: absolute; top: -15%; left: -1%; }
+
+.box-week { justify-content: space-evenly; }
+
+.weekdays { display: flex; justify-content: space-between; }
+
+.week { margin-bottom: 2%; }
+
+.days { text-align: left; display: table; border-right-color: #f6f7eb; }
+
+@media screen and (max-width: 768px) { .button-info1 { display: none; } #horaires { width: 100%; height: 100vh; margin: 20vw auto; background-image: url("../../../assets/img/info-cine-mobile.png"); padding: 5vw 0; position: relative; background-size: 100%; background-position: top; } .box-horaires { display: block; position: sticky; } .box-title-horaires { justify-content: center; align-items: center; text-align: center; margin: 0 auto; } .box-info-horaires { margin: 5% auto 15%; } .title2 { font-size: 2.5rem; text-align: center; margin: 20vw auto; padding: 0; } .gray-box { padding: 7%; } .icon-horaires { left: 50%; transform: translateX(-50%); } .button-info2 { display: block; width: 60%; margin: 10% auto; } }
+
+.container-avenir { background-color: #393939; border-radius: 20px; }
+
+.row-avenir { justify-content: space-evenly; padding: 5% 0; }
+
+.box-film-avenir { margin: 0; }
+
+.film-avenir { margin: 0; }
+
+.img-avenir { border-radius: 20px; }
+
+.box-title-film-avenir { padding: 3% 3% 0; text-align: center; align-items: center; font-size: 1.5rem; font-weight: bold; }
+
+.box-title-film-avenir p { margin-top: 5%; }
+
+@media screen and (max-width: 480px) { .avenir h2 { display: flex; flex-direction: column; font-size: 2rem; align-items: center; padding: 7vw 0; } .avenir p { margin-bottom: 13vw; } .avenir .img-avenir { margin-top: 5vw; } }
+
+.newsletter { width: 100%; margin: 10% 0; justify-content: center; background-image: url("../../../assets/img/img-newsletter.png"); background-repeat: no-repeat; background-position-y: bottom; background-attachment: fixed; background-size: 100%; height: 80vh; align-items: center; position: relative; padding-top: 5%; }
+
+.box-text { position: relative; margin: 5% 5% 5% 0; }
+
+.title-newsletter { font-size: 5rem; }
+
+.text-newsletter { margin: 5% 0; }
+
+.label { /* Indication du formulaire "Renseigner votre e-mail" */ color: #f6f7eb; display: block; margin: 1% 0; }
+
+.mail-input { /* Ensemble zone de texte + Bouton */ display: flex; margin-top: 1%; }
+
+.input-newsletter { /* Emplacement de la zone de texte avec l'exemple */ margin: 0; padding: 5px; font-size: 15px; border-radius: 50px; border: none; width: 30%; padding-left: 3%; background-color: #1c1c1c; }
+
+.button-newsletter { position: relative; right: 4%; }
+
+@media screen and (max-width: 768px) { /* NEWSLETTER MOBILE */ .newsletter { background-size: 100%; background-position: top; background-image: url("../../../assets/img/newsletter-mobile.png"); margin: 30vw auto; padding: 10vw; } .box-text { display: block; position: sticky; margin: 30vw 0; } .title-newsletter { font-size: 2rem; text-align: left; } .text-newsletter { font-size: 1.5rem; margin: 10vw 0; font-weight: lighter; } .label { font-size: 1rem; } .mail-input { margin: 10% auto; } .input-newsletter { /* Emplacement de la zone de texte avec l'exemple */ width: 70%; } .button-newsletter { position: relative; right: 10%; } }
+
+.coup_de_coeur { display: block; justify-content: space-between; background-color: #323232; margin: 15% auto; padding-top: 1%; padding-bottom: 5%; }
+
+.imgtitretexte { display: flex; justify-content: space-between; }
+
+.text-container { margin-left: 8vw; }
+
+.titretexte { display: block; justify-content: space-between; width: 70%; }
+
+.titrecdp { border-radius: 5px; border-color: #323232; }
+
+.coeur { position: absolute; right: 90%; transform: translateY(-45%); }
+
+.titrecdp p { margin: 10% 0%; line-height: 30px; }
+
+@media screen and (max-width: 480px) { .coup_de_coeur { margin-top: 20vw; } .imgtitretexte { display: flex; flex-direction: column; align-items: center; } .coup_de_coeur h2 { display: flex; flex-direction: column; font-size: 2rem; align-items: center; padding: 7vw 0; } .coup_de_coeur h3 { margin: 6vw 0; } .text-container { margin: 0; display: flex; justify-content: center; text-align: center; } .coeur { display: none; } .coup_de_coeur .button { margin: 0; } .content-rush { display: flex; flex-direction: column; align-items: center; } }
+
+.img-box-filmpage { top: 8%; left: 0; position: absolute; width: 100%; margin: 0; }
+
+.image-pagefilm { width: 100%; }
+
+.film-info { display: flex; justify-content: space-between; margin: 32vw auto 10vw; z-index: 1; }
+
+.img-film { width: 35%; margin: 0; z-index: 1; }
+
+.image-film { width: 80%; border-radius: 20px; }
+
+.text { z-index: 1; width: 70%; display: block; margin: 0 0 10vw; }
+
+.box-title-film { margin-bottom: 10%; }
+
+.title-film-page-film { color: #6ad1b4; }
+
+.film-settings { display: flex; justify-content: space-between; }
+
+.film-topics { width: 50%; }
+
+.list-info-film { color: white; margin-right: 10%; width: 100%; font-size: larger; }
+
+.info-film { margin: 0; line-height: 250%; }
+
+.film-synopsis { width: 50%; }
+
+.synopsis-title { color: #6ad1b4; margin-bottom: 10%; }
+
+.text-synopsis { font-weight: lighter; line-height: 200%; font-size: larger; }
+
+.film-section { margin: 10vw auto; }
+
+.title-reservations h2 { color: #77eecc; }
+
+.date-box { width: 100%; }
+
+.date-box-title { margin: 5% 0; }
+
+.date-list { display: flex; width: 100%; margin: 5% 0; justify-content: space-between; background-color: #323232; border-radius: 80px; }
+
+.date-item { background-color: initial; margin: 0; border-radius: 80px; padding: 1%; align-self: center; }
+
+.date-item-active { background-color: #ff5476; border-radius: 80px; padding: 1.5% 2%; }
+
+.seance-list { display: flex; width: 50%; margin: 5% 0; justify-content: space-between; background-color: #323232; border-radius: 80px; }
+
+.seance-item { padding: 3%; }
+
+.seance-item-active { background-color: #ff5476; border-radius: 80px; padding: 3% 5%; }
+
+.seance-link-horaire { color: #77eecc; }
+
+.seance-link-active { align-self: center; padding: 1.5% 2%; }
+
+/*# sourceMappingURL=main.css.map */

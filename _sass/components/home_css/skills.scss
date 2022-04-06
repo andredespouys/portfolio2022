@@ -1,0 +1,154 @@
+.skills-experiences {
+  margin: 30% auto;
+}
+.row1 {
+  display: flex;
+}
+
+.graphs {
+  width: 50%;
+  display: block;
+  margin: 0;
+  justify-content: right;
+}
+
+.graph {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 5% 0 5% 5%;
+}
+.title-graph {
+  color: white;
+  font-size: 1rem;
+}
+.bar-gris {
+  display: inline-block;
+  background-color: $light-gray;
+  height: 5px;
+  flex-grow: 1;
+  border-radius: 3px;
+  width: 95%;
+}
+.bar-blue {
+  background-color: $blue;
+  height: 5px;
+  left: 0;
+  bottom: 6%;
+  border-radius: 3px;
+  width: 80%;
+  position: absolute;
+}
+.bar-red {
+  background-color: $pink;
+  height: 5px;
+  left: 0;
+  bottom: 6%;
+  border-radius: 3px;
+  width: 60%;
+  position: absolute;
+}
+.back,
+.datab {
+  width: 70%;
+}
+
+.text-box-skills {
+  width: 50%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+.text-skills {
+  margin: 5% 0;
+  line-height: 1.5;
+}
+// .button-blue {
+//   @media screen and (max-width: 480px) {
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 10% 0;
+  height: 40vh;
+}
+.experience {
+  width: 33%;
+  padding: 3% ;
+  position: relative;
+  background-color: $light-gray;
+  height:auto;
+}
+.icon-exp {
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  width: 10%;
+}
+
+.exp2,
+.exp3 {
+  background-color: $lighter-gray;
+}
+.title-exp {
+  color: white;
+  margin-bottom: 5%;
+}
+
+.info-exp {
+  margin: 50px 0;
+  color: $light-gray;
+  font-style: italic;
+}
+.sp1 {
+  color: $lighter-gray;
+}
+.text-exp {
+  margin-top: 5%;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-experiences {
+    margin: 50vW auto;
+    position: relative;
+    height: fit-content;
+
+  }
+  .row1{
+    display: block;
+  }
+  .text-skills{
+    margin: 10% 0;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .button-blue{
+    float: right;
+  }
+  .graphs{
+    width: 100%;
+    margin: 15vh auto ;
+  }
+  .row2{
+    display: block;
+    height: fit-content;
+  }
+  .experience{
+    width: 100%;
+    margin: 5vh auto;
+    border-radius: 5px;
+
+    padding: 10% 5%;
+  }
+}
