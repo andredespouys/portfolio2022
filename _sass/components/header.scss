@@ -70,20 +70,22 @@
   font-size: 90%;
   margin-top: 30%;
   transition: 1s ease;
-}
-
-.nav-a {
   color: #ffffff;
 }
-.right {
-  border-right: 0.5px white;
-  border-right-style: solid;
+
+.btn-header{
+  padding: 20%;
 }
 
 .nav-a:hover {
   color: #ff5b7b;
 }
-
+.btn-contact{
+  padding: 10px 15px;
+}
+.btn-contact:hover{
+  color: #f6f7eb;
+}
 // NAVBAR MOBILE
 
 @media screen and (max-width: 768px) {
@@ -101,7 +103,6 @@
 
   .logo-mobile-box {
     width: 80%;
-
     text-align: center;
   }
   .img-logo-mobile {
